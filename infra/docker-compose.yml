@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  judge0:
+    image: judge0/judge0:latest
+    ports:
+      - '2358:2358'
+    restart: unless-stopped

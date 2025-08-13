@@ -1,0 +1,68 @@
+{
+  "longest-bounded-diff": {
+    "id": "longest-bounded-diff",
+    "title": "Longest Subarray with Bounded Difference",
+    "prompt": "Find the length of the longest non-empty subarray where max-min <= limit. Input format:\\n n limit\\n a1 a2 ... an\\n Output: integer length.",
+    "constraints": [
+      "1 <= n <= 1e5",
+      "0 <= ai <= 1e9",
+      "0 <= limit <= 1e9"
+    ],
+    "visible_tests": [
+      {
+        "input": "4 4\\n8 2 4 7\\n",
+        "output": "2"
+      },
+      {
+        "input": "6 5\\n10 1 2 4 7 2\\n",
+        "output": "4"
+      },
+      {
+        "input": "8 0\\n4 2 2 2 4 4 2 2\\n",
+        "output": "3"
+      }
+    ],
+    "hidden_tests": [
+      {
+        "input": "5 10\\n1 2 3 4 5\\n",
+        "output": "5"
+      },
+      {
+        "input": "5 100\\n1 1 1 1 1\\n",
+        "output": "5"
+      },
+      {
+        "input": "10 5\\n7 47 7 3 9 8 8 4 8 7\\n",
+        "output": "4"
+      },
+      {
+        "input": "1 1000\\n24\\n",
+        "output": "1"
+      },
+      {
+        "input": "5 1\\n5 4 3 2 1\\n",
+        "output": "2"
+      },
+      {
+        "input": "8 2\\n1 5 2 6 3 7 4 8\\n",
+        "output": "3"
+      },
+      {
+        "input": "9 6\\n8 1 8 1 8 1 8 1 8\\n",
+        "output": "1"
+      },
+      {
+        "input": "6 15\\n1 2 4 8 16 32\\n",
+        "output": "5"
+      },
+      {
+        "input": "2 1000000000\\n1000000000 0\\n",
+        "output": "2"
+      },
+      {
+        "input": "11 1\\n2 3 2 3 2 3 2 10 2 3 2\\n",
+        "output": "7"
+      }
+    ]
+  }
+}

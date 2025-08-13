@@ -1,0 +1,3 @@
+import React from 'react'
+import MonacoEditor,{OnMount} from '@monaco-editor/react'
+export default function CodeEditor({language,value,onChange,onEditorEvent}:{language:string,value:string,onChange:(v:string)=>void,onEditorEvent:(t:string,data?:any)=>void}){const handleMount:OnMount=(editor,monaco)=>{editor.onDidFocusEditorWidget(()=> onEditorEvent('ui_focus',{panel:'editor'}));editor.onDidBlurEditorWidget(()=> onEditorEvent('ui_focus',{panel:'other'}));editor.onKeyDown((e)=>{onEditorEvent('key',{key:e.browserEvent.key})})};return <MonacoEditor height='100%' language={language==='cpp'?'cpp':language} theme='vs-dark' value={value} onChange={(v)=>onChange(v||'')} onMount={handleMount}/>}

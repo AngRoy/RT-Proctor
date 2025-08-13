@@ -1,0 +1,19 @@
+auth:
+  exam_token: EXAM123
+  admin_password: ADMIN123
+vision:
+  gaze_off_x: 0.35
+  gaze_off_y: 0.28
+  gaze_warn_ratio: 0.5
+  gaze_high_ratio: 0.6
+  blink_ear: 0.21
+  blink_low_per_min: 5.0
+audio:
+  other_speaker_cosine: 0.35
+  conversation_warn: 6
+  conversation_high: 10
+keystrokes:
+  idle_ms: 4000
+  burst_window_ms: 3500
+  burst_keys: 25
+  mass_delete: 25
